@@ -1,0 +1,53 @@
+.footer {
+  width: 100%;
+  background-color: $color-grey-dark;
+  font-size: $default-font-size;
+
+  &__box {
+    border-top: 1px solid $color-primary-dark;
+    padding: 3rem 0;
+  }
+
+  &__logo {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+
+  &__info {
+    padding: 1rem 0 2rem;
+  }
+
+  &__email {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__icon {
+    font-size: 3rem;
+  }
+
+
+  &__nav {
+
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      display: inline-block;
+      color: $color-grey-dark-2;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

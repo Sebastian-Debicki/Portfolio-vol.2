@@ -1,0 +1,13 @@
+.logo {
+  font-size: 4rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 100;
+  font-weight: 300;
+
+  &__animate {
+    color: $color-primary-light;
+    animation: hide 1s infinite;
+  }
+}

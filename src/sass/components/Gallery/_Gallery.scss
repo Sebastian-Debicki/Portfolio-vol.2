@@ -1,0 +1,25 @@
+.gallery {
+  position: relative;
+  transform: translateY(-3.5rem);
+
+  &__carousel {
+    z-index: 2;
+    border-radius: 3px;
+    transition: .4s cubic-bezier(.49, -1.01, .5, 1.95);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+  }
+
+  &__buttons {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,40 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(58% 0, 100% 0, 100% 70%, 100% 0);
+  background-color: $color-primary;
+  z-index: -1;
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__items {
+
+    &--open {
+      animation: moveInLeft .8s ease-out;
+    }
+
+    &--close {
+      animation: hide .5s ease-out;
+    }
+
+    &__item {
+      list-style: none;
+    }
+  }
+
+  &--open {
+    animation: openNavigation .6s ease-out forwards;
+  }
+
+  &--close {
+    animation: closeNavigation .6s ease-out backwards;
+  }
+}

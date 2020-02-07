@@ -1,0 +1,34 @@
+.about {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba($color-black, .8), rgba($color-grey-dark, .8)),
+    url(../../../assets/img/route.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  font-size: $default-font-size;
+
+  &__list {
+    margin: 0 3rem;
+  }
+
+  &__text-container {
+    animation: moveInDown 1s ease forwards;
+  }
+
+  &__img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &__img {
+      width: 90%;
+      box-shadow: 0 3rem 6rem rgba($color-black, .2);
+      filter: blur(5%);
+      border-radius: 3px;
+      animation: moveInRight 1s ease forwards;
+    }
+  }
+
+}

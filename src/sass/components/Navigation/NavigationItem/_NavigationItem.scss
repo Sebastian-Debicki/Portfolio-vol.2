@@ -1,0 +1,224 @@
+.btn {
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+
+  // NAVIGATION BUTTONS
+  &--link {
+
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      display: block;
+      position: relative;
+      padding: 1rem 5rem;
+      color: black;
+      margin: 2rem;
+      transition: .3s;
+      overflow: hidden;
+      box-shadow: 0 .3rem .7rem rgba($color-black, .2);
+      font-size: $default-font-size;
+      font-weight: 300;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(105%, 50%);
+      width: 100%;
+      height: 100%;
+      background-color: $color-white;
+      z-index: -1;
+      border-radius: 3px;
+      transition: .3s ease;
+    }
+
+    &:hover::after {
+      transform: translate(0);
+    }
+
+    &:hover {
+      transform: translateX(-.7rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &.active {
+      transform: translateX(-.7rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+      &::after {
+        transform: translate(0);
+      }
+    }
+  }
+
+
+
+  // LOGO BUTTON
+  &--logo {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgba($color-grey-light-1, .8), rgba($color-grey-light-2, .8));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  // BUTTON PRIMARY
+  &__primary {
+    text-transform: uppercase;
+    position: relative;
+    font-size: $default-font-size;
+    display: inline-block;
+    color: $color-grey-dark;
+    padding: 2rem 5rem;
+    border-radius: 10rem;
+    transition: all .4s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+      &::after {
+        opacity: 0;
+        transform: scaleX(1.4) scaleY(1.6);
+      }
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+
+
+    // BUTTON PRIMARY WHITE
+    &--white {
+      background-color: white;
+
+      &::after {
+        background-color: $color-white;
+      }
+    }
+
+    &--green {
+      background-color: $color-primary-dark;
+      color: white;
+
+      &::after {
+        background-color: $color-primary-dark;
+      }
+    }
+  }
+
+  // BUTTON SECONDARY
+  &__secondary {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: .5rem 4rem;
+    margin: 1rem;
+    overflow: hidden;
+    transition: all .2s;
+    outline: none;
+    color: black;
+    border-bottom: 2px solid $color-primary-dark;
+
+    &:hover {
+      color: white;
+      box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+      transform: translateY(-2px);
+      background-color: $color-primary-dark;
+    }
+
+    &:active {
+      box-shadow: 0 .2rem 6rem rgba($color-black, .15);
+      transform: translateY(-1px);
+    }
+  }
+
+  // BUTTON TERTIARY
+  &__tertiary {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    margin: 0 1rem;
+    overflow: hidden;
+    transition: all .2s;
+    outline: none;
+    box-shadow: 0 .3rem .6rem rgba($color-black, .15);
+    color: black;
+
+    &:hover {
+      color: white;
+      box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+
+      &::after {
+        transform: translateY(0);
+      }
+    }
+
+    &:active {
+      box-shadow: 0 .2rem .4rem rgba($color-black, .15);
+    }
+
+    &::after {
+      content: '';
+      background-color: $color-primary-dark;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .2s;
+      transform: translateY(100%);
+    }
+
+    &--white {
+      background-color: rgba($color-white, .1);
+    }
+  }
+
+
+
+  // FOOTER BUTTONS
+  &--footer-link {
+    display: inline-block;
+    padding: .2rem 1rem;
+    color: $color-grey-dark-2;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transition: all .2s;
+
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+      transform: rotate(3deg) scale(1.1);
+    }
+  }
+
+}

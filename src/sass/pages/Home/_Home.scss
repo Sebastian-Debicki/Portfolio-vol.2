@@ -1,0 +1,30 @@
+.home {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(../../../assets/img/mount.jpg);
+  background-size: cover;
+  background-position: top;
+
+  &__text-box {
+    width: 100%;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(tab-land) {
+      top: 40%;
+    }
+  }
+
+  &__main-animation {
+    animation: moveInLeft 1.5s ease;
+  }
+
+  &__sub-animation {
+    animation: moveInRight 1.5s ease;
+  }
+
+  &__btn-animation {
+    animation: moveInDown 1.5s ease;
+  }
+}
