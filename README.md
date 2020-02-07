@@ -2,6 +2,8 @@
 
 Website about me. I created this web mainly for increasing my css and sass skils. This website looks good on mobile devices too.
 
+* [firebase hosting](https://sebastian-debicki.web.app/ )
+
 ## Technologies
 Project is created with:
 * react: 16.12.0

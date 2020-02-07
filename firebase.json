@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "debicki-sebastian",
+    "site": "sebastian-debicki",
     "public": "build",
     "ignore": [
       "firebase.json",
