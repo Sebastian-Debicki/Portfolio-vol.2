@@ -15,7 +15,7 @@ const About = () => {
             </h3>
           </div>
           <p>I am a beginner front-end web developer specialized mainly in React. I created several of web projects using HTML, CSS and JavaScript. I am punctual and organized employee, always striving to achieve my goal. I focus mainly on personal development and try to systematically develop in various areas of my life. Even if I encounter a problem that is beyond me, I don't give up and try to solve it.
-          I started my journey with programming at January 2019. This is what I wan't to do in the future.
+          This is what I wan't to do in the future.
           </p>
 
           <div className="heading-tertiary">

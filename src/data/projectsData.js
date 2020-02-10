@@ -100,28 +100,32 @@ export const projects = [
     describe: 'Try to guess the word.',
     technologies: [html, css, javaScript, react, sass, redux, firebase],
     images: [hangmanImg1, hangmanImg2, hangmanImg3, hangmanImg4, hangmanImg5, hangmanImg6],
-    githubLink: 'https://github.com/ssebaa9/Hangman-game'
+    githubLink: 'https://github.com/ssebaa9/Hangman-game',
+    liveLink: 'https://hangman-game-debicki.firebaseapp.com/'
   },
   {
     title: 'My Website',
     describe: 'Website about me, all created by me',
     technologies: [html, css, javaScript, react, sass, firebase],
     images: [mywebsiteImg1, mywebsiteImg2, mywebsiteImg3, mywebsiteImg4, mywebsiteImg5, mywebsiteImg6],
-    githubLink: 'https://github.com/ssebaa9/My-website.git'
+    githubLink: 'https://github.com/ssebaa9/My-website.git',
+    liveLink: 'https://debicki-sebastian.web.app/'
   },
   {
     title: 'Table of Companies',
     describe: 'You can sort the table by header or filter any matching elements by search field. Table looks good on the mobile devices too.',
     technologies: [html, css, javaScript, react, sass],
     images: [tableImg1, tableImg2, tableImg3],
-    githubLink: 'https://github.com/ssebaa9/Table-of-Companies'
+    githubLink: 'https://github.com/ssebaa9/Table-of-Companies',
+    liveLink: 'https://table-of-companies.firebaseapp.com/'
   },
   {
     title: 'Portfolio Web',
-    describe: 'Website about me. I created this web mainly for increasing my css and sass skils. This website looks good on mobile devices too',
+    describe: 'Website about me. I created this web mainly for increasing my css and sass skils.',
     technologies: [html, css, javaScript, react, sass, firebase],
     images: [portfolioWebImg1, portfolioWebImg2, portfolioWebImg3, portfolioWebImg4, portfolioWebImg5, portfolioWebImg6, portfolioWebImg7, portfolioWebImg8, portfolioWebImg9],
-    githubLink: 'https://github.com/ssebaa9/Table-of-Companies'
+    githubLink: 'https://github.com/ssebaa9/Table-of-Companies',
+    liveLink: 'https://sebastian-debicki.web.app/'
   }
 
 ]

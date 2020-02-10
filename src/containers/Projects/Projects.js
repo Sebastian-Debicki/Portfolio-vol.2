@@ -16,10 +16,11 @@ class Projects extends Component {
               </h3>
             </div>
             <p className="projects__project-text u-margin-bottom-small">{project.describe}</p>
-            <div className="technologies u-margin-bottom-small">
+            <div className="projects__technologies u-margin-bottom-small">
               {project.technologies.map((technology) => technology)}
             </div>
             <a className="btn btn__secondary" href={project.githubLink}>See on Github &rarr;</a>
+            {project.liveLink && <a className="btn btn__secondary" href={project.liveLink}>Live &rarr;</a>}
           </div>
         </div>
       </div>)
