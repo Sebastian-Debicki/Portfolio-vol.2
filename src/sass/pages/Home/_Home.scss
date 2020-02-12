@@ -1,8 +1,8 @@
 .home {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url(../../../assets/img/mount.jpg);
+  background-image: linear-gradient(160deg, $color-black 1%, rgba($color-primary-dark, .8), rgba($color-primary-light, .8)), url(../../../assets/img/forest.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 
   &__text-box {
     width: 100%;

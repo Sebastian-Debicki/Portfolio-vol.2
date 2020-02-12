@@ -80,7 +80,7 @@
     display: inline-block;
     color: $color-grey-dark;
     padding: 2rem 5rem;
-    border-radius: 10rem;
+    border-radius: 3px;
     transition: all .4s;
 
     &:hover {
@@ -103,7 +103,7 @@
       display: inline-block;
       height: 100%;
       width: 100%;
-      border-radius: 10rem;
+      border-radius: 3px;
       position: absolute;
       top: 0;
       left: 0;
@@ -216,7 +216,7 @@
 
     &:hover,
     &:active {
-      color: $color-primary;
+      color: $color-primary-light;
       box-shadow: 0 1rem 2rem rgba($color-black, .4);
       transform: rotate(3deg) scale(1.1);
     }
