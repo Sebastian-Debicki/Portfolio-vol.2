@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const useOpen = () => {
+export const useLayoutState = () => {
   const [open, setOpenState] = React.useState(false);
   const [touched, setTouchedState] = React.useState(false);
 

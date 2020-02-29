@@ -99,7 +99,7 @@ class Contact extends Component {
                 <textarea value={this.state.message} onChange={this.handleInputChangeMessage} className="form__input form__input--textarea" placeholder="Message" id="message" required />
                 <label className="form__label" htmlFor="message">Message</label>
               </div>
-              <button className="btn btn__primary btn__primary--green">Send a message</button>
+              <button className="btn btn__primary btn__primary--dark">Send a message</button>
             </form>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { useOpen } from '../../../components/Layout/useOpen';
+import { useLayoutState } from '../../../components/Layout/useLayoutState';
 import { renderHook, act } from '@testing-library/react-hooks'
 
 describe('useOpen', () => {
   it('change open state to true when togglerNavHandler was run', () => {
-    const { result } = renderHook(useOpen);
+    const { result } = renderHook(useLayoutState);
     act(() => {
       result.current.togglerNavHandler()
     })
@@ -11,7 +11,7 @@ describe('useOpen', () => {
   })
 
   it('change open state to false when togglerNavHandler runs two times', () => {
-    const { result } = renderHook(useOpen);
+    const { result } = renderHook(useLayoutState);
     act(() => {
       result.current.togglerNavHandler()
     })
@@ -22,7 +22,7 @@ describe('useOpen', () => {
   })
 
   it('change touched state to true when togglerNavHandler was run', () => {
-    const { result } = renderHook(useOpen);
+    const { result } = renderHook(useLayoutState);
     act(() => {
       result.current.togglerNavHandler()
     })
@@ -30,7 +30,7 @@ describe('useOpen', () => {
   })
 
   it('change open state to false always when closeNavHandler was run', () => {
-    const { result } = renderHook(useOpen);
+    const { result } = renderHook(useLayoutState);
     act(() => {
       result.current.togglerNavHandler()
     })

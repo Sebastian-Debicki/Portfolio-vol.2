@@ -9,7 +9,7 @@ const Home = () => {
           <span className="heading-primary--main home__main-animation">Sebastian Dębicki</span>
           <span className="heading-primary--sub home__sub-animation">Front-end Developer</span>
         </h1>
-        <NavigationItem route="/projects" class="btn btn__primary btn__primary--white u-margin-top-big home__btn-animation">See my projects</NavigationItem>
+        <NavigationItem route="/projects" class="btn btn__primary btn__primary--light u-margin-top-big home__btn-animation">See my projects</NavigationItem>
       </div>
     </section>
   );

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import recepiesImg1 from '../assets/projects-imgs/recepies/recepies-img-1.jpg';
-import recepiesImg2 from '../assets/projects-imgs/recepies/recepies-img-2.jpg';
 import savingsImg1 from '../assets/projects-imgs/savings-form/savings-img-1.jpg';
 import savingsImg2 from '../assets/projects-imgs/savings-form/savings-img-2.jpg';
 import savingsImg3 from '../assets/projects-imgs/savings-form/savings-img-3.jpg';
@@ -39,8 +37,16 @@ import portfolioWebImg4 from '../assets/projects-imgs/portfolio-web/portfolio-we
 import portfolioWebImg5 from '../assets/projects-imgs/portfolio-web/portfolio-web-img-5.jpg';
 import portfolioWebImg6 from '../assets/projects-imgs/portfolio-web/portfolio-web-img-6.jpg';
 import portfolioWebImg7 from '../assets/projects-imgs/portfolio-web/portfolio-web-img-7.jpg';
-import portfolioWebImg8 from '../assets/projects-imgs/portfolio-web/portfolio-web-img-8.jpg';
-import portfolioWebImg9 from '../assets/projects-imgs/portfolio-web/portfolio-web-img-9.jpg';
+import recepiesAppImg1 from '../assets/projects-imgs/recepies-app/recepies-app-img-1.jpg';
+import recepiesAppImg2 from '../assets/projects-imgs/recepies-app/recepies-app-img-2.jpg';
+import recepiesAppImg3 from '../assets/projects-imgs/recepies-app/recepies-app-img-3.jpg';
+import recepiesAppImg4 from '../assets/projects-imgs/recepies-app/recepies-app-img-4.jpg';
+import recepiesAppImg5 from '../assets/projects-imgs/recepies-app/recepies-app-img-5.jpg';
+import recepiesAppImg6 from '../assets/projects-imgs/recepies-app/recepies-app-img-6.jpg';
+import recepiesAppImg7 from '../assets/projects-imgs/recepies-app/recepies-app-img-7.jpg';
+import recepiesAppImg8 from '../assets/projects-imgs/recepies-app/recepies-app-img-8.jpg';
+import recepiesAppImg9 from '../assets/projects-imgs/recepies-app/recepies-app-img-9.jpg';
+import recepiesAppImg10 from '../assets/projects-imgs/recepies-app/recepies-app-img-10.jpg';
 
 
 const html = <span key="1" title="HTML" className="iconify projects__project-icon" data-icon="logos:html-5" data-inline="false"></span>
@@ -53,13 +59,6 @@ const firebase = <span key="7" title="Firebase" className="iconify projects__pro
 
 
 export const projects = [
-  {
-    title: 'Recepies',
-    describe: 'You can add recepies and later modify them.',
-    technologies: [html, css, javaScript],
-    images: [recepiesImg1, recepiesImg2],
-    githubLink: 'https://github.com/ssebaa9/recepies',
-  },
   {
     title: 'Savings/Expenses Formular',
     describe: 'Small app where you can add your savings and expenses for every month.',
@@ -123,9 +122,17 @@ export const projects = [
     title: 'Portfolio Web',
     describe: 'Website about me. I created this web mainly for increasing my css and sass skils.',
     technologies: [html, css, javaScript, react, sass, firebase],
-    images: [portfolioWebImg1, portfolioWebImg2, portfolioWebImg3, portfolioWebImg4, portfolioWebImg5, portfolioWebImg6, portfolioWebImg7, portfolioWebImg8, portfolioWebImg9],
-    githubLink: 'https://github.com/ssebaa9/Table-of-Companies',
+    images: [portfolioWebImg1, portfolioWebImg2, portfolioWebImg3, portfolioWebImg4, portfolioWebImg5, portfolioWebImg6, portfolioWebImg7],
+    githubLink: 'https://github.com/ssebaa9/Portfolio-web',
     liveLink: 'https://sebastian-debicki.web.app/'
-  }
+  },
+  {
+    title: 'Recepies App',
+    describe: 'You can store your recepies here, recepies are storing in firebase database. Every user have access to them own recepies.',
+    technologies: [html, css, javaScript, react, sass, redux, firebase],
+    images: [recepiesAppImg1, recepiesAppImg2, recepiesAppImg3, recepiesAppImg4, recepiesAppImg5, recepiesAppImg6, recepiesAppImg7, recepiesAppImg8, recepiesAppImg9, recepiesAppImg10],
+    githubLink: 'https://github.com/ssebaa9/Recepies-app',
+    liveLink: 'https://recepiesapp.web.app/'
+  },
 
 ]

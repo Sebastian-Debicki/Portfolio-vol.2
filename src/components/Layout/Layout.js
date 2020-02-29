@@ -4,10 +4,10 @@ import HamburgerButton from '../HamburgerButton/HamburgerButton';
 import Logo from '../Logo/Logo';
 import Backdrop from '../Backdrop/Backdrop';
 import Footer from '../Footer/Footer';
-import { useOpen } from './useOpen';
+import { useLayoutState } from './useLayoutState';
 
 const Layout = (props) => {
-  const { open, touched, togglerNavHandler, closeNavHandler } = useOpen();
+  const { open, touched, togglerNavHandler, closeNavHandler } = useLayoutState();
 
   return (
     <>

@@ -75,21 +75,25 @@
   // BUTTON PRIMARY
   &__primary {
     text-transform: uppercase;
-    position: relative;
     font-size: $default-font-size;
     display: inline-block;
-    color: $color-grey-dark;
-    padding: 2rem 5rem;
-    border-radius: 3px;
+    color: $color-white;
+    padding: 1.5rem 4rem;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
     transition: all .4s;
+    letter-spacing: .3rem;
+    border-radius: 3px;
+    margin-bottom: 3rem;
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+      box-shadow: 0 2rem 4rem rgba($color-black, .2);
+      color: $color-white;
 
       &::after {
-        opacity: 0;
-        transform: scaleX(1.4) scaleY(1.6);
+        transform: translateX(0);
       }
     }
 
@@ -99,32 +103,30 @@
     }
 
     &::after {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 3px;
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
+      height: 100%;
+      width: 100%;
       z-index: -1;
-      transition: all .4s;
+      transform: translateX(-24rem);
+      transition: all .6s cubic-bezier(.78, 1.85, .6, .63);
     }
 
 
     // BUTTON PRIMARY WHITE
-    &--white {
-      background-color: white;
+    &--light {
+      border: 5px solid $color-primary-light;
 
       &::after {
-        background-color: $color-white;
+        background-color: $color-primary-light;
       }
     }
 
     // BUTTON PRIMARY GREEN
-    &--green {
-      background-color: $color-primary-dark;
-      color: white;
+    &--dark {
+      border: 5px solid $color-primary-dark;
 
       &::after {
         background-color: $color-primary-dark;
@@ -142,7 +144,7 @@
     overflow: hidden;
     transition: all .2s;
     outline: none;
-    color: black;
+    color: $color-black;
     border-bottom: 2px solid $color-primary-dark;
 
     &:hover {
