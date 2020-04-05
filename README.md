@@ -1,4 +1,4 @@
-# Portfolio vol.1
+# Portfolio vol.2
 
 Website about me. I created this web mainly for increasing my css and sass skils. This website looks good on mobile devices too.
 
@@ -26,7 +26,7 @@ Open terminal,
 Change the current working directory to the location where you want to clone the application,
 Paste:
 ```
-$ https://github.com/ssebaa9/Portfolio-vol.1.git
+$ https://github.com/ssebaa9/Portfolio-vol.2.git
 ```
 Press Enter. Your local clone will be created.
 
