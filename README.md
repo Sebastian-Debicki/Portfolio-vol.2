@@ -5,7 +5,7 @@ Website about me. I created this web mainly for increasing my css and sass skils
 * [firebase hosting](https://sebastian-debicki.web.app/ )
 
 ## Technologies
-Project is created with:
+Project was created with:
 * react: 16.12.0
 * react-dom: 16.12.0
 * react-router-dom: 5.1.2
@@ -26,7 +26,7 @@ Open terminal,
 Change the current working directory to the location where you want to clone the application,
 Paste:
 ```
-$ https://github.com/ssebaa9/Portfolio-web.git
+$ https://github.com/ssebaa9/Portfolio-vol.1.git
 ```
 Press Enter. Your local clone will be created.
 
